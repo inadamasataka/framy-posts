@@ -1,0 +1,4 @@
+{
+  "_note": "Times are UTC (HH:MM). Three slots a day: US morning, US evening, Japan morning. The workflow runs every 30 minutes and posts at most one item per run, whenever a slot has passed and that day's quota is not yet used.",
+  "slotsUtc": ["14:00", "19:30", "23:00"]
+}
