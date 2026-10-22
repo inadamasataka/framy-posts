@@ -5,7 +5,7 @@
 //   node scripts/post.mjs --now 2026-11-02T14:05:00Z   pretend it is this time (for testing)
 //   node scripts/post.mjs --id B1 --force post this exact item right now, ignoring the slots
 //
-// Needs THREADS_USER_ID and THREADS_TOKEN (environment variables / GitHub secrets) and, for items with media,
+// Needs THREADS_TOKEN (environment variable / GitHub secret) and, for items with media,
 // MEDIA_BASE_URL (the public URL the clips/ folder is served from, e.g. https://<user>.github.io/framy-posts/).
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -55,7 +55,7 @@ async function api(method, path, params) {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function publish(item) {
-  const user = process.env.THREADS_USER_ID;
+  const user = "me"; // "me" is whoever the token belongs to, so there is no user id to mistype
   const params = { text: item.text };
   if (item.media) {
     const base = process.env.MEDIA_BASE_URL;
@@ -98,6 +98,8 @@ try {
   writeFileSync(join(root, "state.json"), JSON.stringify(state, null, 2) + "\n");
   console.log("posted, id", res.id);
 } catch (e) {
-  console.error(String(e.message ?? e));
+  const msg = String(e.message ?? e);
+  console.error(msg);
+  console.log(`::error title=Threads post failed (${item.id})::${msg.replace(/[\r\n]+/g, " ")}`); // shows up in the run summary, readable without opening the log
   process.exit(1); // the post stays in the queue; the next run tries again
 }

@@ -29,7 +29,7 @@ node scripts/post.mjs --dry-run --now 2026-11-02T14:05:00Z
    ```
 4. **GitHub.** Create a public repository named `framy-posts` from this folder, then:
    - Settings → Pages → deploy from the `main` branch, root.
-   - Settings → Secrets and variables → Actions: secrets `THREADS_USER_ID` and `THREADS_TOKEN`; variable `MEDIA_BASE_URL` = `https://<your-github-name>.github.io/framy-posts/`
+   - Settings → Secrets and variables → Actions: secret `THREADS_TOKEN` (the user id is not needed: posts go to `me`, the token's owner); variable `MEDIA_BASE_URL` = `https://<your-github-name>.github.io/framy-posts/`
 5. **Test once** from the Actions tab (Run workflow) after setting `schedule.json` so a slot is due, or locally with `--id B1 --force`.
 
 ## Keeping it running
