@@ -12,124 +12,147 @@
     "text": "Day 1: new account, one app, zero followers. I'm building Framy in the open. Come watch."
   },
   {
-    "id": "C4",
-    "text": "Be honest: what's on your wall right now? Art, photo, poster, nothing?"
-  },
-  {
-    "id": "A1",
-    "text": "Picking a frame is mostly a feeling. So I made the feeling adjustable.\n\nShadow, light, reflection, thickness. Slide until it looks right on your wall.",
+    "id": "R2",
+    "text": "You don't need the words. \"Mat\", \"window\", \"bevel\". Slide until it looks right.",
     "media": {
       "type": "VIDEO",
       "file": "clips/01-adjust.mp4"
     }
   },
   {
-    "id": "D1",
-    "text": "Hang the centre of the picture at about eye level, around 145 cm (57 in) from the floor."
+    "id": "J1",
+    "text": "At the frame shop: \"How's this?\" At the hair salon: \"How does it look?\" Both come after the cutting is done. Both have one polite answer."
   },
   {
-    "id": "E1",
-    "text": "Hi, I'm Framy. Yes, I'm a frame that talks about frames. No, I do not see the problem."
+    "id": "S1",
+    "text": "Frames can't leave the wall without help. I think that's why we're so calm."
   },
   {
-    "id": "A2",
-    "text": "A mat can change a photo more than the frame does.\n\nWidth, position, colour. You can even move the window off-centre. Try it before you cut anything.",
-    "media": {
-      "type": "VIDEO",
-      "file": "clips/02-matte.mp4"
-    }
+    "id": "K2",
+    "text": "Measuring a frame:\n1. Measure the photo.\n2. Add the mat.\n3. Add the frame.\n4. Discover the wall is smaller than the number."
   },
   {
-    "id": "C1",
-    "text": "Black frame or wood frame for a black-and-white photo? Reply with your pick, I'm curious."
+    "id": "I2",
+    "text": "Things that cost more than the photo:\n1. The frame.\n2. The second frame, after the first one looked wrong.\n3. Saying \"it's fine\" about the second frame."
   },
   {
-    "id": "D2",
-    "text": "A thicker mat makes a small photo feel more important. Too thick and it starts to feel lost. Try 5–8 cm for a 4×5."
-  },
-  {
-    "id": "B2",
-    "text": "I was tired of buying a frame, hanging it, and thinking \"hmm.\"\n\nSo I'm building a way to see it first: your photo, the frame, the mat, the light, your wall."
-  },
-  {
-    "id": "A3",
-    "text": "Pink mat. Because why not.\n\nPick any colour on the wheel, or type the code (this one is E58ED8). Your photo, your rules.",
+    "id": "L3",
+    "text": "Mat colours I tried:\n1. White → safe.\n2. Black → serious.\n3. Pink → no regrets.",
     "media": {
       "type": "VIDEO",
       "file": "clips/03-colour.mp4"
     }
   },
   {
-    "id": "C2",
-    "text": "White mat or no mat? Photographers, what's your default?"
+    "id": "M3",
+    "text": "The second nail hole is the most honest part of a wall."
   },
   {
-    "id": "D3",
-    "text": "Dark frame on a light wall draws a strong outline. Light frame on a light wall disappears. Neither is wrong, but know which you want."
+    "id": "N3",
+    "text": "My frame under:\n1. A warm bulb → friendly.\n2. A cool bulb → serious.\n3. Daylight → honest.\n4. A phone torch → defensive."
   },
   {
-    "id": "F2",
-    "text": "Added a colour code field today. Type six digits, get the exact mat colour. Small feature, big relief."
+    "id": "T1",
+    "text": "Added a six-digit colour field. You type E58ED8, you get E58ED8. Small, but I wanted it."
   },
   {
-    "id": "A4",
-    "text": "Held my phone up to the wall and there it was, at real size.\n\nA4, A3, or any size you type in. If it looks too big in AR, it is too big on the wall.",
+    "id": "K1",
+    "text": "A4 on a screen: a postage stamp. A4 on a wall: a window. I keep misjudging it, which is why I show it at real size.",
     "media": {
       "type": "VIDEO",
       "file": "clips/04-ar-wall.mp4"
     }
   },
   {
-    "id": "C5",
-    "text": "Frame you regret buying? Mine would be anything I did not test first. (I'm a frame, I have opinions.)"
+    "id": "J3",
+    "text": "How it usually goes:\n1. The frame is built.\n2. \"How's this?\"\n3. \"It's great, thank you.\"\n4. Hang it at home.\n5. \"Hmm.\""
   },
   {
-    "id": "D4",
-    "text": "Warm light (2700K) makes wood frames glow. Cool light (5000K) makes them look flat. Check your bulb before choosing."
+    "id": "O1",
+    "text": "Black frame: serious. Oak: friendly. White: gallery. Mahogany: dad's study. That's my take, and I'm a frame, so I'd know."
   },
   {
-    "id": "E3",
-    "text": "A frame's whole job is to look good while holding something better. I'm fine with that."
+    "id": "L1",
+    "text": "White mat, off-white mat, \"white\" mat. I'd say they're three different colours. I'd also say this is my area, because I'm a frame."
   },
   {
-    "id": "A5",
-    "text": "You can also pick the frame up and turn it around.\n\nEdge, depth, mat. Everything you cannot see from straight ahead.",
+    "id": "I3",
+    "text": "When the frame costs more than the picture, a wrong choice hurts. That's most of why I'd like to try it on first."
+  },
+  {
+    "id": "T2",
+    "text": "Added the side of the frame. From the front it looks the same. From the side it finally looks like a frame.",
     "media": {
       "type": "VIDEO",
       "file": "clips/05-ar-object.mp4"
     }
   },
   {
-    "id": "C3",
-    "text": "How many centimetres of mat do you leave around a 4×5 print?"
+    "id": "N1",
+    "text": "Glare: the frame's glass shows you the room you're standing in. I think that's the one thing a screen can't promise, and I try to be honest about it."
   },
   {
-    "id": "D5",
-    "text": "Print first at the real size, tape it to the wall for a day, then choose the frame. Or use AR and skip the tape."
+    "id": "M2",
+    "text": "Hanging a frame:\n1. Measure.\n2. Mark.\n3. Hammer.\n4. Step back.\n5. \"Hmm.\"\n6. Second hole."
   },
   {
-    "id": "F3",
-    "text": "Spent today on the AR wall view. Real-size frame, placed on your wall. The hard part was making it hang straight."
+    "id": "S4",
+    "text": "My day: held a picture. Hung on a wall. Held a picture. Occasionally tilted. Content."
   },
   {
-    "id": "C6",
-    "text": "If you could try any frame in your room before buying it, would you? What would you check first: colour, size, or how it looks next to the other things on the wall?"
+    "id": "J2",
+    "text": "The hardest question in framing: \"Is this okay?\" asked after the frame is built. I'd like to answer before anyone cuts anything."
   },
   {
-    "id": "D6",
-    "text": "Match the frame to the photo's darkest tone, not its brightest. It makes the photo look deeper."
+    "id": "L2",
+    "text": "A mat window a few millimetres off-centre can look like a mistake or a decision. I'd like to know which one I made.",
+    "media": {
+      "type": "VIDEO",
+      "file": "clips/02-matte.mp4"
+    }
   },
   {
-    "id": "E4",
-    "text": "Things I'm good at: standing still, looking square, being hung. Things I'm bad at: stairs."
+    "id": "K3",
+    "text": "A3 print, A3 frame, A3 wall space. Three different A3s. I'm told this is normal."
   },
   {
-    "id": "F4",
-    "text": "Thinking about what to build next: more frames, a better AR, or something silly. Vote with a reply."
+    "id": "I5",
+    "text": "The picture is the point. The frame is the bill. I'd like the bill to be a good decision."
   },
   {
-    "id": "E2",
-    "text": "Fun fact: I have a tiny secret game inside me. Tap FIGHT next to AR. I will not explain the rules. (I lose a lot.)",
-    "hold": true
+    "id": "R1",
+    "text": "What's a mat? The paper border inside the frame. That's it. It's most of the reason a picture looks \"framed\"."
+  },
+  {
+    "id": "P1",
+    "text": "Ordering a frame online: the photo shows it on a perfect wall in perfect light. Your wall is not that wall. Mine isn't either."
+  },
+  {
+    "id": "T3",
+    "text": "Fixed: in AR, the mat used to lose its width. Now what you set is what hangs on the wall."
+  },
+  {
+    "id": "K4",
+    "text": "A wide mat makes the picture look smaller inside a bigger frame. Both are true. I'd like to see which one I'm getting."
+  },
+  {
+    "id": "Q1",
+    "text": "Ten prints, ten frames, one wall. Mixing is brave. Matching is calm. In a small room I'd pick calm."
+  },
+  {
+    "id": "S3",
+    "text": "People ask what I'd choose for myself. Aluminium. I'm biased."
+  },
+  {
+    "id": "M1",
+    "text": "Nail holes are permanent. Opinions about frames are not. I'd try the frame before I pick up the hammer."
+  },
+  {
+    "id": "U1",
+    "text": "Phone up, wall in front, frame there at real size. That's the whole trick. It took a while to make it feel this ordinary.",
+    "media": {
+      "type": "VIDEO",
+      "file": "clips/04-ar-wall.mp4"
+    }
   }
 ]

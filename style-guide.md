@@ -12,6 +12,18 @@ Supporting lines (use one at a time, never all together):
 - Fail on the screen, not on the wall.
 - Frames you could actually buy at a frame shop.
 
+## The maker's voice (read from the user's own note.com writing, 219 free articles)
+Framy speaks, but the humour and the habits are the maker's:
+- **Open small.** A greeting ("Hi! I'm Framy!") or one ordinary scene. Never a slogan first.
+- **Be specific.** Numbers, materials, costs, sizes ("¥10,000 for frames", "2700K", "A3"). The maker lists real budgets and compares papers one by one.
+- **Laugh at yourself, lightly.** Failures and clumsiness are material (the maker calls his own large-format shooting stance embarrassing). Dry, never loud. No exclamation marks in jokes.
+- **One short image.** A sea, a sky, a single comparison. One per post.
+- **Deadpan lists.** "1. Guess → regret. 2. Ask a friend → they said 'nice'." The arrow does the joke.
+- **Short aphorism, then soften it.** "There are no good or bad photos, only liked and not liked." Then "I think", "for me".
+- **Close small.** A practical line or a light punch. Not a conclusion, not a call to action.
+- **Stay on the subject.** Every post must connect to frames, mats, print size, walls, light, or the app. The maker's other interests (cyanotype papers, TV jokes, cameras, money) are only welcome when framing is in the story. A funny line that has nothing to do with Framy does not go out.
+- **Stay honest.** Personal facts (the solo show, costs, papers, cyanotype) must come from what the maker has actually written or confirmed. Mark anything unconfirmed `FACT-CHECK` in the drafts and do not publish it until confirmed.
+
 ## How it sounds
 - **Soft, first-person, not declarative.** "I think", "for me", "I've found", "I wish", "I'd rather". Share what one maker noticed; do not tell people how things are or what they should do. Avoid "you must", "always", "never", "the truth is".
 - Short sentences. One idea per post. Often a small confession ("I once…", "I got tired of…").
