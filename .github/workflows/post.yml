@@ -26,6 +26,7 @@ jobs:
           MEDIA_BASE_URL: ${{ vars.MEDIA_BASE_URL }}
         run: node scripts/post.mjs
       - name: Save the posting history
+        if: always()
         run: |
           if ! git diff --quiet state.json; then
             git config user.name "framy-bot"

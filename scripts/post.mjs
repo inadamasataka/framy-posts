@@ -26,11 +26,20 @@ const state = read("state.json");
 const GRAPH = process.env.THREADS_API_BASE ?? "https://graph.threads.com/v1.0"; // the override is only for testing against a fake server
 const MAX_TEXT_BYTES = 500; // Threads counts emoji by UTF-8 bytes in some places; keep a margin below the 500 limit
 
+/** A stable pseudo-random number 0..max-1 for a string (same day + slot gives the same offset on every run). */
+function jitter(key, max) {
+  let h = 2166136261;
+  for (const c of key) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  return Math.abs(h) % max;
+}
+
 function dueNow() {
   const dayStart = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  const spread = schedule.jitterMinutes ?? 0; // each slot is moved later by up to this many minutes, differently every day
   const passed = schedule.slotsUtc.filter((s) => {
     const [h, m] = s.split(":").map(Number);
-    return new Date(dayStart.getTime() + (h * 60 + m) * 60000) <= now;
+    const offset = spread ? jitter(`${dayStart.toISOString().slice(0, 10)}-${s}`, spread + 1) : 0;
+    return new Date(dayStart.getTime() + (h * 60 + m + offset) * 60000) <= now;
   }).length;
   const postedToday = state.posted.filter((p) => new Date(p.at) >= dayStart).length;
   return { passed, postedToday, due: postedToday < passed };
@@ -76,6 +85,15 @@ async function publish(item) {
   return api("POST", `${user}/threads_publish`, { creation_id: container.id });
 }
 
+if (state.paused && !flag("--resume")) {
+  console.log(`Paused: ${state.paused}. Nothing was tried. Run with --resume (or delete "paused" from state.json) when the cause is fixed.`);
+  process.exit(0);
+}
+if (flag("--resume")) {
+  delete state.paused;
+  state.failures = [];
+}
+
 const { passed, postedToday, due } = dueNow();
 const item = nextItem();
 console.log(`now ${now.toISOString()} | slots passed today ${passed} | posted today ${postedToday} | due ${due}`);
@@ -95,11 +113,20 @@ if (DRY) process.exit(0);
 try {
   const res = await publish(item);
   state.posted.push({ id: item.id, at: new Date().toISOString(), threadId: res.id });
+  state.failures = [];
   writeFileSync(join(root, "state.json"), JSON.stringify(state, null, 2) + "\n");
   console.log("posted, id", res.id);
 } catch (e) {
   const msg = String(e.message ?? e);
   console.error(msg);
+  state.failures = [...(state.failures ?? []), { id: item.id, at: new Date().toISOString(), message: msg.slice(0, 300) }].slice(-5);
+  // a block from Meta ("API access blocked", OAuth errors) or two failures in a row: stop trying so the account is not hammered
+  const blocked = /API access blocked|OAuthException|"code":(190|200|368)/.test(msg);
+  if (blocked || state.failures.length >= 2) {
+    state.paused = blocked ? "Meta blocked the API call; check the account before resuming" : "two failures in a row";
+    console.log(`::warning title=Posting paused::${state.paused}`);
+  }
+  writeFileSync(join(root, "state.json"), JSON.stringify(state, null, 2) + "\n");
   console.log(`::error title=Threads post failed (${item.id})::${msg.replace(/[\r\n]+/g, " ")}`); // shows up in the run summary, readable without opening the log
   process.exit(1); // the post stays in the queue; the next run tries again
 }

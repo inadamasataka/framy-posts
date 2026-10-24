@@ -1,4 +1,5 @@
 {
-  "_note": "Times are UTC (HH:MM). Three slots a day: US morning, US evening, Japan morning. The workflow runs every 30 minutes and posts at most one item per run, whenever a slot has passed and that day's quota is not yet used.",
-  "slotsUtc": ["14:00", "19:30", "23:00"]
+  "_note": "Times are UTC (HH:MM). Two slots a day for now (US morning and US evening). Each slot is pushed later by up to jitterMinutes, a different amount every day, so posts do not land on the same minute. The workflow runs every 30 minutes and posts at most one item per run.",
+  "slotsUtc": ["14:00", "23:00"],
+  "jitterMinutes": 90
 }
