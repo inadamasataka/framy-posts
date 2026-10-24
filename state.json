@@ -25,6 +25,12 @@
       "at": "2026-10-23T18:00:00.000Z",
       "threadId": null,
       "note": "posted manually by the user, not through post.mjs — recorded here only to stop the workflow from posting it again"
+    },
+    {
+      "id": "S1",
+      "at": "2026-10-24T17:16:48.843Z",
+      "threadId": "18150240718524976"
     }
-  ]
+  ],
+  "failures": []
 }
